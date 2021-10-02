@@ -1,0 +1,18 @@
+{
+  "name": "p5js-playground",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "p5": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/p5": "^1.3.1",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  }
+}
