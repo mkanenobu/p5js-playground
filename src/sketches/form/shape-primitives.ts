@@ -1,6 +1,14 @@
 import p5 from "p5";
 
-export const sketch = (p: p5) => {
+/**
+ * 基本図形
+ *
+ * triangle 三角形、三点それぞれの座標を指定
+ * rect 正方形、基準（左上）の座標と幅と高さを指定
+ * quad 四角形、四点それぞれの座標を指定
+ * arc  弧、中心座標と高さ、幅などを指定
+ */
+export const shapePrimitives = (p: p5) => {
   p.setup = () => {
     p.createCanvas(720, 400);
     p.background(0);
@@ -21,7 +29,7 @@ export const sketch = (p: p5) => {
     p.fill(204);
     p.triangle(288, 18, 351, 360, 288, 360);
 
+    p.fill(255);
+    p.arc(479, 300, 280, 280, p.PI, p.TWO_PI);
   };
 };
-
-new p5(sketch);
