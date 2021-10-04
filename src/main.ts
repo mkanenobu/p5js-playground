@@ -1,4 +1,5 @@
 import p5 from "p5";
+import { rainDrop } from "./sketches/raindrop";
 
 export const sketch = (p: p5) => {
   p.setup = () => {
@@ -20,8 +21,7 @@ export const sketch = (p: p5) => {
 
     p.fill(204);
     p.triangle(288, 18, 351, 360, 288, 360);
-
   };
 };
 
-new p5(sketch);
+new p5(rainDrop);
